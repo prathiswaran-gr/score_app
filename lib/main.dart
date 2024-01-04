@@ -13,15 +13,13 @@ Future<void> main() async {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
-          primarySwatch: Colors.green,
-          textTheme: const TextTheme(
-              displayLarge: TextStyle(
-                  fontSize: 40,
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold),
-              bodyMedium: TextStyle(fontSize: 18, color: Colors.black),
-              displayMedium: TextStyle(fontSize: 20, color: Colors.black)),
-        ),
+      primarySwatch: Colors.green,
+      textTheme: const TextTheme(
+          displayLarge: TextStyle(
+              fontSize: 40, color: Colors.black, fontWeight: FontWeight.bold),
+          bodyMedium: TextStyle(fontSize: 18, color: Colors.black),
+          displayMedium: TextStyle(fontSize: 20, color: Colors.black)),
+    ),
     home: const MyApp(),
   ));
 }
@@ -32,12 +30,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Database db = Database();
-    // print(db.getTodayAllMatches());
+    // print(db.getUpcommingMatches());
     return Scaffold(
-      
       resizeToAvoidBottomInset: false,
       body: StreamBuilder(
-        
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
