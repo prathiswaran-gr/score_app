@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "201694974737",
+    "project_id": "scoreboard-b335a",
+    "storage_bucket": "scoreboard-b335a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201694974737:android:19e200ef9ed1f1a78872b0",
+        "android_client_info": {
+          "package_name": "com.example.cricket_scoreboard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUrlmxFs3vqNKU1rFojgsTxmI59vF5FG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
